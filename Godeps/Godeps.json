@@ -1,0 +1,15 @@
+{
+	"ImportPath": "github.com/flynn/flynn-devbox/src/repro",
+	"GoVersion": "go1.3",
+	"Deps": [
+		{
+			"ImportPath": "github.com/docker/libcontainer/netlink",
+			"Comment": "v1.1.0-115-ge6a43c1",
+			"Rev": "e6a43c1c2b9f769deb96348a0a93417cd48a36d8"
+		},
+		{
+			"ImportPath": "github.com/j-keck/arping",
+			"Rev": "7aa611681473b9c5af382b96b6aa1df0b89f5c97"
+		}
+	]
+}
