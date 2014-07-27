@@ -1,5 +1,10 @@
 # libvirt-lxc ARP issue
 
+**Update:** The issue was that Spanning Tree Protocol is enabled by default on
+`virbr0` which spends 2s in each of the listening and learning states before
+enabling the interface. The solution is to disable STP with `brctl stp virbr0
+off`.
+
 This repository contains a reproduction case for ARP issue that I've been
 running into with libvirt-lxc.
 
